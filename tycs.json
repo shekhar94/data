@@ -1,0 +1,66 @@
+[{
+        "id": "tycs1.1",
+        "questionType": "Declarations and Initializations",
+        "difficulty": "Easy",
+        "question": "What would be the output of following program?<br><pre class='lang-c line-numbers mt-1 mb-0'><code> main() {\n &nbsp;&nbsp;&nbsp;&nbsp;char far = *t1, *t2;\n &nbsp;&nbsp;&nbsp;&nbsp;printf(\"%d%d\", sizeof(t1), sizeof(t2));\n } </code></pre>",
+        "options": ["2 4",
+            "2 2",
+            "4 2",
+            "4 4"
+        ],
+        "answer": 3,
+        "explaination": ""
+    },
+    {
+        "id": "tycs1.2",
+        "questionType": "Declarations and Initializations",
+        "difficulty": "Easy",
+        "question": "What would be the output of following program?<br><pre class='lang-c line-numbers mt-1 mb-0'><code>int y = 40;\nmain() {\n &nbsp;&nbsp;&nbsp;&nbsp;int y = 20;\n &nbsp;&nbsp;&nbsp;&nbsp;printf(\"\\n%d\", y);\n } </code></pre>",
+        "options": ["40",
+            "20",
+            "10",
+            "0"
+        ],
+        "answer": 2,
+        "explaination": "Whenever there is a conflict between a local variable and a global variable it is the local variable which gets a priority."
+    },
+    {
+        "id": "tycs1.3",
+        "questionType": "Declarations and Initializations",
+        "difficulty": "Easy",
+        "question": "What would be the output of following program?<br><pre class='lang-c line-numbers mt-1 mb-0'><code>main() {\n&nbsp;&nbsp;int y = 40;\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;int y = 20;\n&nbsp;&nbsp;&nbsp;&nbsp;printf(\"\\n%d\", y);\n&nbsp;&nbsp;}\n&nbsp;&nbsp;printf(\"%d\", y);\n} </code></pre>",
+        "options": ["20 40",
+            "20 20",
+            "40 40",
+            "40 20"
+        ],
+        "answer": 1,
+        "explaination": "In case of a conflict between local variables, the one which is more local gets the priority."
+    },
+    {
+        "id": "tycs1.4",
+        "questionType": "Declarations and Initializations",
+        "difficulty": "Easy",
+        "question": "Is the following statement a declaration or definition?<br><pre class='lang-c line-numbers mt-1 mb-0'><code>extern int i;</code></pre>",
+        "options": ["Declaration",
+            "Definition",
+            "Assignment",
+            "Initialization"
+        ],
+        "answer": 1,
+        "explaination": "Not available"
+    },
+    {
+        "id": "tycs1.5",
+        "questionType": "Declarations and Initializations",
+        "difficulty": "Easy",
+        "question": "What would be the output of following program?<br><pre class='lang-c line-numbers mt-1 mb-0'><code>main() {\n&nbsp;&nbsp;extern int y;\n&nbsp;&nbsp;y = 20;\n&nbsp;&nbsp;printf(\"%d\", sizeof(y));\n}</code></pre>",
+        "options": ["4",
+            "2",
+            "Would vary from compiler to compiler",
+            "Error, i undefined"
+        ],
+        "answer": 4,
+        "explaination": "external int y is a declaration not a definition, hence the error."
+    }
+]
